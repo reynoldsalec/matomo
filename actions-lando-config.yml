@@ -1,0 +1,12 @@
+# Disable the "core" matomo plugins
+disablePlugins:
+  - lando-matomo
+
+# Make sure we are dogfooding this plugin for testing purposes
+plugins:
+  "@lando/matomo": /home/runner/work/matomo/matomo
+
+# Disable metrics reporting
+stats:
+  - report: false
+    url: https://metrics.lando.dev
